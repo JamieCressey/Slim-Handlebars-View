@@ -1,0 +1,27 @@
+{
+    "name": "jamiecressey/slim-handlebars-view",
+    "type": "library",
+    "description": "Slim Framework 3 view helper built on top of the Handlebars templating component",
+    "keywords": ["slim","framework","view","template","handlebars"],
+    "homepage": "http://slimframework.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jamie Cressey",
+            "email": "jamiecressey89@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+	"xamin/handlebars.php": ">=0.10.2"
+        "psr/http-message": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Slim\\Views\\": "src"
+        }
+    }
+}
