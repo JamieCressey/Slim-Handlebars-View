@@ -13,7 +13,7 @@
     ],
     "require": {
         "php": ">=5.5.0",
-	"xamin/handlebars.php": ">=0.10.2"
+	"xamin/handlebars.php": ">=0.10.2",
         "psr/http-message": "^1.0"
     },
     "require-dev": {
