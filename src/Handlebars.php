@@ -53,10 +53,10 @@ class Handlebars implements \ArrayAccess
      * @param string $path     Path to templates directory
      * @param array  $settings Handlebars environment settings
      */
-    public function __construct($path, $settings = [], $partials = 'partials')
+    public function __construct($path, $settings = [])
     {
 	$this->loader = new \Handlebars\Loader\FilesystemLoader($path, $settings);
-	$this->partialLoader = new \Handlebars\Loader\FilesystemLoader($partials, $settings);
+	$this->partialLoader = new \Handlebars\Loader\FilesystemLoader($path . '/partials', $settings);
 
 	$this->environment = new \Handlebars\Handlebars([ "loader" => $this->loader, "partials_loader" => $this->partialLoader ]);
     }
